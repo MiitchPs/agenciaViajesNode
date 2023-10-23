@@ -1,0 +1,38 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janerio 
+        em Aventura
+
+block contenido 
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius dui dolor, sit amet pellentesque ipsum cursus non. Etiam a sem eget lectus interdum condimentum. Nam vel dapibus lacus. Vestibulum augue lectus, laoreet sed suscipit ac, ullamcorper et dolor. Maecenas dignissim maximus dui.
+                p Donec rutrum mauris quam, id auctor lectus lobortis sed. Curabitur sed varius massa. Donec at tortor aliquam, porttitor nunc quis, rutrum urna. Cras vel augue malesuada, tempus augue vitae, viverra dui. Ut ut elit et nisi lacinia.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt=" imagen nosotros", class="img-fluid")
+            
+        
+        include ./layout/bloque_viajes
+
+    .descuento 
+        .container
+            .row
+                .col-md-6
+                    .contenido 
+                        h3 5% de descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 23 de Octubre de 2023 - 07 de Noviembre de 2023
+                        p.precio $2,500 USD
+
+
+    .container 
+        h2.mt-5.text-center Testimoniales 
+        include ./layout/bloque_testimoniales
+
+
+        
+            
